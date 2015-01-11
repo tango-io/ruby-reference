@@ -1,8 +1,7 @@
-1. Bootcamp introduction
-2. Ruby introduction
-3. Standard Types
-4. Expression
-5. Classes, Objects and Variables
-6. Containers, Blocks and iterators
-7. Inheritance, Modules, Mixins
-8. Unit Testing
+1. Ruby introduction
+2. Standard Types
+3. Expression
+4. Classes, Objects and Variables
+5. Containers, Blocks and iterators
+6. Inheritance, Modules, Mixins
+7. Unit Testing
