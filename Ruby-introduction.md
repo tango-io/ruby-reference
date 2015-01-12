@@ -144,3 +144,68 @@ produces:
 "Mexico"
 nil
 ```
+
+## Blocks & Iterators
+
+Ruby Code blocks are definitely one of the coolest features of Ruby and are chunks of code between braces or between do- end that you can associate with method invocations, almost as if they were parameters.
+
+This is a code block:
+
+```
+{ puts "Hello" }
+```
+
+This is also a code block:
+
+```
+do
+  puts "Hello"
+end
+```
+
+A method can then invoke an associated block one or more times using the Ruby `yield` statement.
+
+```
+def call_block
+  puts "The method was called"
+  yield
+  yield
+  puts "End of method"
+end
+
+call_block { puts "In the block" }
+
+produces:
+The method was called
+In the block
+In the block
+End of method
+```
+
+Also you can provide arguments to the call to yield, and they will be passed to the block.
+
+```
+def who_says_what
+  yield("Jonatan", "I'm a javascript developer")
+  yield("Cesar", "I'm a Ruby developer")
+end
+
+who_says_what {|person, phrase| puts "#{person} says #{phrase}"}
+ 
+produces:
+Dave says hello
+Andy says goodbye
+```
+
+Code blocks are used throughout the Ruby library to implement `iterators`, which are methods that return successive elements from some kind of collection, such as an array:
+
+```
+animals = %w( ant bee cat dog ) # create an array
+animals.each {|animal| puts animal }
+
+produces:
+ant
+bee
+cat
+dog
+```
