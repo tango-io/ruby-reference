@@ -42,7 +42,7 @@ a, b = 1, 2      => #a=1, b=2
 a, b = b, a      => #b=2, a=1
 ``` 
 
-Ruby lets you have a comma-separated list of rvalues (the things on the right of the assignment).
+Ruby lets you have a comma-separated list of values (the things on the right of the assignment).
 
 ## Conditional Execution
 
