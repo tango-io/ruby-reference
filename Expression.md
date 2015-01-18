@@ -47,3 +47,32 @@ Ruby lets you have a comma-separated list of values (the things on the right of 
 ## Conditional Execution
 
 Ruby has several different mechanisms for conditional execution of code; most of them should feel familiar.
+Before we get into them, though, we need to spend a short time looking at boolean expressions.
+
+Ruby has a simple definition of truth. Any value that is not nil or the constant false is true.
+
+### And, Or, and Not
+
+Ruby supports all the standard boolean operators.
+
+`nil && 99`
+
+`nil || 99`
+
+`!false`
+
+## if and unless Expressions
+
+An if expression in Ruby is pretty similar to if statements in other languages:
+
+```
+artist = "Shakira"
+
+if artist == "Taylor Swift"
+  puts "Hatters gonna hate hate hate (8)"
+elsif artist == "Shakira"
+  puts "Por que esto es africa !! Jungle eh eh (8)"
+else
+  puts "The artist is not in the play list"
+end
+```
