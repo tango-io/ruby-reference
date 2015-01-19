@@ -76,3 +76,73 @@ else
   puts "The artist is not in the play list"
 end
 ```
+
+Ruby also has a negated form of the if statement:
+
+```
+unless duration > 180
+  listen_intently
+end
+```
+
+The unless statement does support else, but most people seem to agree that it’s clearer to switch to an if statement in these cases.
+
+### case Expressions
+
+The Ruby case expression is a powerful beast: a multiway if on steroids. And just to make it even more powerful, it comes in two flavors.
+
+The first form is fairly close to a series of if statements; it lets you list a series of conditions and execute a statement corresponding to the first one that’s true:
+
+```
+case
+  when song.name == "Shake it off"
+    puts "I love you Taylor Swift"
+  when song.duration > 120
+    puts "Too long!"
+end
+```
+
+The second form of the case statement is probably more common. You specify a target at the top of the case statement, and each when clause lists one or more comparisons to be tested against that target:
+
+```
+case command
+  when "byobu"
+    puts "opening session ..."
+  else
+    print "Illegal command: #{command}"
+  end
+```
+
+### Loops
+
+Ruby has pretty primitive built-in looping constructs.
+
+```
+for i in 1..10 do
+ puts i
+end
+```
+
+```
+i = 1
+while i <= 10
+  puts i
+  i++
+end
+```
+
+Those loops are very common in Programming Languages, but we are forgetting something ...
+
+![this is ruby !](http://cdn.meme.am/instances/56277206.jpg)  
+
+Ruby has a friendly syntax to declare loops
+
+```
+3.times do 
+end
+```
+
+```
+1.upto(100) do
+end
+```
