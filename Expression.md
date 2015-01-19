@@ -138,11 +138,13 @@ Those loops are very common in Programming Languages, but we are forgetting some
 Ruby has a friendly syntax to declare loops
 
 ```
-3.times do 
+3.times do |x|
+ puts x
 end
 ```
 
 ```
-1.upto(100) do
+1.upto(100) do |x| 
+  puts x
 end
 ```
