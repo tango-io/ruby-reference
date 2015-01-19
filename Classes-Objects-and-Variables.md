@@ -41,4 +41,48 @@ The conjunction of complex inheritance, methods, properties of an object must be
 Poly means "many"  and morphism means "forms". Different classes might define the same method or property.
 
 
-Everything we manipulate in Ruby is an object. And every object in Ruby was generated either directly or indirectly from a class.
+Everything we manipulate in Ruby is an object. And every object in Ruby was generated either directly or indirectly from a class. Let's build a Dog class in Java then in Ruby
+
+```
+class Dog {
+
+}
+```
+
+Cool, What properties has a Dog? Usually a dog has a name and breed
+
+```
+class Dog {
+  
+  private String name;
+  private String breed;
+
+}
+```
+
+Now that we have the properties let's create the Setters and Getters
+
+```
+class Dog {
+  
+  private String name;
+  private String breed;
+
+  public void setName(String name) {
+    this.name = name
+  }
+
+  public void setBreed(String breed) {
+    this.breed = breed
+  }
+
+  public String getName(){
+    return this.name
+  }
+
+  public String getBreed(){
+    return this.breed
+  }
+
+}
+```
