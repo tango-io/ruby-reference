@@ -194,4 +194,4 @@ scooby = Dog.new('scooby', 'gran danes')
 puts "#{scooby.bark} Hello my name is #{scooby.name}"
 ```
 
-Classes in Ruby are defined with the word `class`, the symbols that are next to `attr_accessor` are the properties, `attr_accessor` means that any property can be set and get; also exist `attr_reader` and `attr_writer`
+Classes in Ruby are defined using `class`, the symbols that are next to `attr_accessor` are the properties, `attr_accessor` means that any property can be set and get; also exist `attr_reader` and `attr_writer` as we saw before, methods are defined with `def` and the constructor is defined creating an `initialize` method 
