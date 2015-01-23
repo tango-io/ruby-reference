@@ -195,3 +195,35 @@ puts "#{scooby.bark} Hello my name is #{scooby.name}"
 ```
 
 Classes in Ruby are defined using `class`, the symbols that are next to `attr_accessor` are the properties, `attr_accessor` means that any property can be set and get; also exist `attr_reader` and `attr_writer` as we saw before, methods are defined with `def` and the constructor is defined creating an `initialize` method 
+
+![amazing](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNOxatz59AYT3smpt1p-pRHPG_e5_YcVHGts9fXux7ViLmlsAfWbDIU4)
+
+## Methods(class and instance)
+
+To use the method `bark` we needed to instance the object Dog in scooby, this are the `instance methods`.
+
+In other programming languages you probably used `Math.round(1.3)`, you didn't need to instance the class Math to use the `round` method, this methods are the `class methods`
+
+```
+class Dog
+  self.bark
+    puts "woaf woaf"
+  end
+end
+
+Dog.bark
+```
+
+## Access Control
+
+When designing a class interface, it’s important to consider just how much of your class you’ll be exposing to the outside world. Allow too much access into your class, and you risk increasing the coupling in your application
+
+Ruby gives you three levels of protection:
+
+* **Public methods** can be called by anyone—no access control is enforced. Methods are
+public by default (except for initialize, which is always private).
+
+* **Protected methods** canbeinvokedonlybyobjectsofthedefiningclassanditssubclasses.
+Access is kept within the family.
+
+* **Private methods** cannot be called with an explicit receiver—the receiver is always the current object, also known as self. This means that private methods can be called only in the context of the current object
