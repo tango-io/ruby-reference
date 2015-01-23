@@ -88,3 +88,108 @@ class Dog {
 
 }
 ```
+
+Also, we want to set the properties when the ours dogs are created
+
+```
+class Dog {
+  
+  private String name;
+  private String breed;
+
+  public Dog(String name, String breed){
+   this.name = name;
+   this.breed = breed;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setBreed(String breed) {
+    this.breed = breed;
+  }
+
+  public String getName(){
+    return this.name;
+  }
+
+  public String getBreed(){
+    return this.breed;
+  }
+
+}
+```
+
+To finish our dog let's add a bark method
+
+```
+class Dog {
+  
+  private String name;
+  private String breed;
+
+  public Dog(String name, String breed){
+   this.name = name;
+   this.breed = breed;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setBreed(String breed) {
+    this.breed = breed;
+  }
+
+  public String getName(){
+    return this.name;
+  }
+
+  public String getBreed(){
+    return this.breed;
+  }
+
+  public String bark(){
+    return "Woaf Woaf";
+  }
+
+}
+
+```
+
+We have our class, properties and methods we are ready to create a dog
+
+```
+class TestDog {
+
+  public static void main(String args[]){
+
+    Dog scooby = new Dog("scooby","gran danes");
+    System.out.println(scooby.bark() + "Hello my name is" + scooby.name);
+
+  }
+
+}
+```
+
+
+I know that is a lot of code, let's use Ruby instead of Java
+
+```
+class Dog
+  attr_accessor :name, breed
+
+  def initialize(name, breed)
+    @name, @breed = name, breed
+  end
+
+  def bark
+    "Woaf woaf"
+  end
+end
+
+scooby = Dog.new('scooby', 'gran danes')
+
+puts "#{scooby.bark} Hello my name is #{scooby.name}"
+```
