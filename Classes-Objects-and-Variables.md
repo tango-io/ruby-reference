@@ -43,7 +43,7 @@ Poly means "many"  and morphism means "forms". Different classes might define th
 
 ##Classes
 
-Everything we manipulate in Ruby is an object. And every object in Ruby was generated either directly or indirectly from a class. Let's build a Dog class in Java then in Ruby
+Everything we manipulate in Ruby is an object. And every object in Ruby was generated either directly or indirectly from a class. Let's build a Dog class in Java
 
 ```
 class Dog {
