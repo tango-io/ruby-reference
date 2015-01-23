@@ -227,3 +227,20 @@ public by default (except for initialize, which is always private).
 Access is kept within the family.
 
 * **Private methods** cannot be called with an explicit receiver—the receiver is always the current object, also known as self. This means that private methods can be called only in the context of the current object
+
+You specify access levels to methods within class or module definitions using one or more of the three functions public, protected, and private.
+
+```
+class MyClass
+  def method1
+  end
+
+  protected
+  def method2
+  end
+
+  private
+  def method3
+  end
+end
+```
