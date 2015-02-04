@@ -1,6 +1,6 @@
 Unit testing is testing that focuses on small chunks (units) of code, typically individual methods or lines within methods. This is in contrast to most other forms of testing, which consider the system as a whole.
 
-Why focus in so tightly? It’s because ultimately all software is constructed in layers; code in one layer relies on the correct operation of the code in the layers below. If this underlying code turns out to contain bugs, then all higher layers are potentially affected. This is a big problem. 
+Why focus in so tightly? It’s because ultimately all software is constructed in layers; code in one layer relies on the correct operation of the code in the layers below. If this underlying code turns out to contain bugs, then all higher layers are potentially affected. This is a big problem.
 
 
 ## The Testing Framework
@@ -13,7 +13,7 @@ The Ruby testing framework is basically three facilities wrapped into a neat pac
 
 ### Assertions == Expected Results
 
-Rather than have you write series of individual if statements in your tests, the testing framework provides a set of assertions that achieve the same thing.
+Rather than have you write series of individual if statements in your tests, the testing framework (which testing framework?) provides a set of assertions that achieve the same thing.
 
 ```
 class Assassin
@@ -29,17 +29,17 @@ class TestAssasin < Test::Unit::TestCase
 end
 ```
 
-The assertion says that we’re expecting the Assassin creed should equal to `"Nothing is true, everything is permitted."`
+The assertion says that we’re expecting the Assassin creed to be equal to `"Nothing is true, everything is permitted."`
 
 
-Let's do It more complex tests
+Let's create more complex tests:
 
 ```
 class Assassin
   attr_accessor :weapons
 
   def initialize
-    @weapons = {:knife => 1, :sword => 2} 
+    @weapons = {:knife => 1, :sword => 2}
   end
 
   def attack(enemy, weapon)

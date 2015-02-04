@@ -17,19 +17,19 @@ produces:
 
 Unlike other programming languages where you have to manage conversion Ruby does it automatically.
 
-Ruby includes support for rational and complex numbers but doesn’t have a literal syntax for representing rational and complex numbers. Instead, you create them.
+Ruby includes support for rational and complex numbers but it doesn’t have a literal syntax for representing rational and complex numbers. Instead, you create them.
 
 ```
 Rational(1, 4) + Rational(1, 4) # => (1/2)
 
-Complex(1, 2) + Complex(1, 4)   # => (2+6i) 
+Complex(1, 2) + Complex(1, 4)   # => (2+6i)
 ```
 
 ## Strings
-Ruby strings are simply sequences of characters. Strings are often created using string literals—sequences of characters between delimiters. `''` , `""`. Technically, Ruby does not have a class for characters—characters are simply strings of length one. 
+Ruby strings are simply sequences of characters. Strings are often created using string literals—sequences of characters between delimiters. `''` , `""`. Technically, Ruby does not have a class for characters—characters are simply strings of length one.
 
-## Ranges 
-Ranges occur everywhere: January to December, 0 to 9, a to z. 
+## Ranges
+Ranges occur everywhere: January to December, 0 to 9, a to z.
 
 `(1..10).to_a # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
 
