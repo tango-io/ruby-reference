@@ -46,7 +46,7 @@ class Dog {
 }
 ```
 
-Also, we want to set the properties when the ours dogs are created <=== "when the ours"??
+Also, we want to set the properties when our dog is created
 
 ```
 class Dog {
