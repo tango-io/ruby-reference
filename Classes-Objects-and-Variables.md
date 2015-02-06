@@ -1,46 +1,3 @@
-Before to start we need to have very clear this concepts:
-
-**Namespace**
-
-A container which allows developers to bundle all functionality under a unique, application-specific name.
-
-**Class**
-
-Defines the characteristics of the object. It is a template definition of variables and methods of an object.
-
-**Object**
-
-An Instance of a class. <=== this is contradictory since a class is an object itself.
-
-**Property**
-
-An object characteristic, such as color.
-
-**Method**
-
-An object capability, such as walk. It is a subroutine or function associated with a class.
-
-**Constructor**
-
-A method called at the moment of instantiation of an object. It usually has the same name as that of the class containing it.
-
-**Inheritance**
-
-A class can inherit characteristics from another class.
-
-**Encapsulation**
-
-A method of bundling the data and methods that use them together. <=== this doesn't seem very clear to me.
-
-**Abstraction**
-
-The conjunction of complex inheritance, methods, properties of an object that must be able to simulate a reality model. <== this doesn't seem very clear to me. Do those elements really need to be always "complex"?
-
-**Polymorphism**
-
-Poly means "many"  and morphism means "forms". Different classes might define the same method or property. <=== can this definition be improved?
-
-
 ##Classes
 
 Everything we manipulate in Ruby is an object. And every object in Ruby was generated either directly or indirectly from a class. Let's build a Dog class in Java
@@ -223,8 +180,7 @@ Ruby gives you three levels of protection:
 * **Public methods** can be called by anyone—no access control is enforced. Methods are
 public by default (except for the initialize, which is always private).
 
-* **Protected methods** canbeinvokedonlybyobjectsofthedefiningclassanditssubclasses. <== ??
-Access is kept within the family.
+* **Protected methods** Access is kept within the family.
 
 * **Private methods** cannot be called with an explicit receiver—the receiver is always the current object, also known as self. This means that private methods can be called only in the context of the current object
 
