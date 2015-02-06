@@ -10,7 +10,7 @@ Defines the characteristics of the object. It is a template definition of variab
 
 **Object**
 
-An Instance of a class.
+An Instance of a class. <=== this is contradictory since a class is an object itself.
 
 **Property**
 
@@ -30,15 +30,15 @@ A class can inherit characteristics from another class.
 
 **Encapsulation**
 
-A method of bundling the data and methods that use them together.
+A method of bundling the data and methods that use them together. <=== this doesn't seem very clear to me.
 
 **Abstraction**
 
-The conjunction of complex inheritance, methods, properties of an object must be able to simulate a reality model.
+The conjunction of complex inheritance, methods, properties of an object that must be able to simulate a reality model. <== this doesn't seem very clear to me. Do those elements really need to be always "complex"?
 
 **Polymorphism**
 
-Poly means "many"  and morphism means "forms". Different classes might define the same method or property.
+Poly means "many"  and morphism means "forms". Different classes might define the same method or property. <=== can this definition be improved?
 
 
 ##Classes
@@ -51,11 +51,11 @@ class Dog {
 }
 ```
 
-Cool, What properties has a Dog? Usually a dog has a name and breed
+Cool, What properties does a Dog have? Usually a dog has a name and breed
 
 ```
 class Dog {
-  
+
   private String name;
   private String breed;
 
@@ -66,7 +66,7 @@ Now that we have the properties let's create the Setters and Getters
 
 ```
 class Dog {
-  
+
   private String name;
   private String breed;
 
@@ -89,11 +89,11 @@ class Dog {
 }
 ```
 
-Also, we want to set the properties when the ours dogs are created
+Also, we want to set the properties when the ours dogs are created <=== "when the ours"??
 
 ```
 class Dog {
-  
+
   private String name;
   private String breed;
 
@@ -121,11 +121,11 @@ class Dog {
 }
 ```
 
-To finish our dog let's add a bark method
+To finish our Dog class let's add a bark method
 
 ```
 class Dog {
-  
+
   private String name;
   private String breed;
 
@@ -194,7 +194,7 @@ scooby = Dog.new('scooby', 'gran danes')
 puts "#{scooby.bark} Hello my name is #{scooby.name}"
 ```
 
-Classes in Ruby are defined using `class`, the symbols that are next to `attr_accessor` are the properties, `attr_accessor` means that any property can be set and get; also exist `attr_reader` and `attr_writer` as we saw before, methods are defined with `def` and the constructor is defined creating an `initialize` method 
+Classes in Ruby are defined using `class`, the symbols that are next to `attr_accessor` are the properties, `attr_accessor` means that any property can be set and get; also exist `attr_reader` and `attr_writer` as we saw before, methods are defined with `def` and the constructor is defined creating an `initialize` method
 
 ![amazing](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzNOxatz59AYT3smpt1p-pRHPG_e5_YcVHGts9fXux7ViLmlsAfWbDIU4)
 
@@ -216,14 +216,14 @@ Dog.bark
 
 ## Access Control
 
-When designing a class interface, it’s important to consider just how much of your class you’ll be exposing to the outside world. Allow too much access into your class, and you risk increasing the coupling in your application
+When designing a class interface, it’s important to consider just how much of your class will be exposed to the outside world. Allow too much access into your class, and you risk increasing the coupling in your application <== "and you risk increasing the coupling in your application" I think that sentence can be improved.
 
 Ruby gives you three levels of protection:
 
 * **Public methods** can be called by anyone—no access control is enforced. Methods are
-public by default (except for initialize, which is always private).
+public by default (except for the initialize, which is always private).
 
-* **Protected methods** canbeinvokedonlybyobjectsofthedefiningclassanditssubclasses.
+* **Protected methods** canbeinvokedonlybyobjectsofthedefiningclassanditssubclasses. <== ??
 Access is kept within the family.
 
 * **Private methods** cannot be called with an explicit receiver—the receiver is always the current object, also known as self. This means that private methods can be called only in the context of the current object

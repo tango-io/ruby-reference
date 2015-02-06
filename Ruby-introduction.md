@@ -1,10 +1,10 @@
 ## What is Ruby ?
 
-Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax natural to read and easy to write.
 
 ## Ruby Is an Object-Oriented Language
 
-Everything in ruby is a genuine object which means that everything has methods and properties
+Almost everything in ruby is an object (having methods and properties):
 
 `"Lorem Ipsum".reverse` => `"muspI meroL"`
 
@@ -14,25 +14,25 @@ Everything in ruby is a genuine object which means that everything has methods a
 
 `1.next` => `2`
 
-Unlike other programming languages as PHP or JAVA, Ruby syntax is clean.
+Ruby syntax is "cleaner" than the syntax from other languages such as PHP or Java:
 
-> PHP
+PHP:
 
 `strrev("Lorem Ipsum")` => `"muspI meroL"`
 
-> Java
+Java:
 
 `new StringBuilder("Lorem Ipsum").reverse().toString()` => `"muspI meroL"`
 
-Ruby is wonderful, isn't it? It seems as if we told ruby what we want and ruby does it.
+Ruby is wonderful, isn't it? It seems as if we told ruby what we want to do and ruby does it.
 
 ![wonderful](http://www.quickmeme.com/img/14/14d92dcc90a773e11cf2a9664a001b29039b0f0b9fd2e7729e19015bb53d89f5.jpg)
 
 ## Some Basic Ruby
 
-As we said before, ruby syntax is clean and readable, you don't need semicolons at the end of each statements, goodbye to nightmares for compilation errors produced by semicolons.
+As said before, ruby syntax is clean and readable, you don't need semicolons at the end of each statement, say goodbye to nightmares for compilation errors produced by semicolons.
 
-Let's start to know more about ruby, We'll write a method that personalize a greeting.
+Let's start learning more about ruby, we'll write a method that personalizes a greeting.
 
 ```
 def say_hello(name)
@@ -62,7 +62,7 @@ String say_hello(String name){
 }
 ```
 
-The methods looks very similar, right? Let's take the advantages of Ruby, What if I tell you that you don't need the `return` word, Ruby returns the last statement by default and we can do an expression interpolation. 
+The methods looks very similar, right? Let's take the advantages of Ruby, What if I tell you that you that you don't need the `return` word, Ruby returns the last statement by default and we can do an expression interpolation.
 
 ```
 def say_hello(name)
@@ -70,7 +70,7 @@ def say_hello(name)
 end
 ```
 
-Within the string, the sequence #{expression} is replaced by the value of expression. 
+Within the string, the sequence #{expression} is replaced by the value of expression.
 
 ## Arrays and Hashes
 
@@ -80,7 +80,7 @@ Ruby’s arrays and hashes are indexed collections, an Object that groups multip
 ```
 prime_numbers = [1,2,3,5]  # array with four elements
 puts "The first element is #{prime_numbers[0]}"
-prime_numbers[0] = nil 
+prime_numbers[0] = nil
 puts "Now first element is #{prime_numbers[0]}"
 
 produces:
@@ -91,9 +91,9 @@ Now first element is `nil`
 You may have noticed that we used the special value `nil` in this example. In many languages, the concept of `nil` (or `null`) means “no object.” but this is Ruby and remember that everything in Ruby is an object even `nil`
 
 ### Hashes
-A Hash is a collection of key-value pairs. It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index. 
+A Hash is a collection of key-value pairs. It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
 
-Creates a new hash populated with the given objects. Equivalent to the literal { key => value, ... }. In the first form, keys and values occur in pairs, so there must be an even number of arguments. 
+Creates a new hash populated with the given objects. Equivalent to the literal { key => value, ... }. In the first form, keys and values occur in pairs, so there must be an even number of arguments.  <=== in my opinion this paragraph
 
 ```
 food = {
@@ -122,7 +122,7 @@ SOUTH = 2
 warrior_walk(NORTH)
 ```
 
-Let's make it better, Ruby offers a cleaner alternative. `Symbols` are objects that represent names and some strings inside the Ruby interpreter.T hey are generated using the :name and :"string" literals syntax 
+Let's make it better, Ruby offers a cleaner alternative. `Symbols` are objects that represent names and some strings inside the Ruby interpreter.T hey are generated using the :name and :"string" literals syntax
 
 ```
 walk(:north)
@@ -147,15 +147,15 @@ nil
 
 ## Blocks & Iterators
 
-Ruby Code blocks are definitely one of the coolest features of Ruby and are chunks of code between braces or between do- end that you can associate with method invocations, almost as if they were parameters.
+Ruby blocks are definitely one of the coolest features in Ruby, they are chunks of code between braces or between do-end statements that you can associate with method invocations, almost as if they were parameters.
 
-This is a code block:
+This is a ruby block:
 
 ```
 { puts "Hello" }
 ```
 
-This is also a code block:
+This is also a ruby block:
 
 ```
 do
@@ -191,16 +191,16 @@ def who_says_what
 end
 
 who_says_what {|person, phrase| puts "#{person} says #{phrase}"}
- 
+
 produces:
-Dave says hello
-Andy says goodbye
+Jonatan says I'm a javascript developer
+Cesar says I'm a Ruby developer
 ```
 
 Code blocks are used throughout the Ruby library to implement `iterators`, which are methods that return successive elements from some kind of collection, such as an array:
 
 ```
-animals = %w( ant bee cat dog ) # create an array
+animals = %w( ant bee cat dog ) # creates an array
 animals.each {|animal| puts animal }
 
 produces:
