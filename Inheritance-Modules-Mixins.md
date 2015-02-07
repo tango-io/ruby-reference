@@ -23,7 +23,7 @@ Note that the child class defines no methods, but when we create an instance of 
 
 Modules are a way of grouping methods, classes, and constants together. Modules give you two major benefits:
 
-  * Provide a namespace and prevent name clashes. <== how is that they prevent name clashes?
+  * Provide a namespace and prevent repeated names.
   * Modules support the mixin facility.
 
 
