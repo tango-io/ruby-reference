@@ -1,6 +1,6 @@
 ## Inheritance
 
-Inheritance allows you to create a class that is a refinement or specialization of another class. This class is called a subclass of the original, and the original is a superclass of the subclass. People also refers to them as child and parent classes. <== I'd go more with a definition like the following: "inheritance is when an object or class is based on another object or class" (from Wikipedia)
+Inheritance is when an object or class is based on another object or class" (from Wikipedia)
 
 ```
 class HowardStark
