@@ -41,7 +41,7 @@ def say_hello(name)
 end
 
 #Let's begin to greet
-say_hello("Ivan")
+say_hello("Ivan")<=
 say_hello("Federico")
 
 produces:
@@ -93,7 +93,7 @@ You may have noticed that we used the special value `nil` in this example. In ma
 ### Hashes
 A Hash is a collection of key-value pairs. It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
 
-Creates a new hash populated with the given objects. Equivalent to the literal { key => value, ... }. In the first form, keys and values occur in pairs, so there must be an even number of arguments.  <=== in my opinion this paragraph
+Creates a new hash populated with the given objects. Equivalent to the literal { key => value, ... }.
 
 ```
 food = {
