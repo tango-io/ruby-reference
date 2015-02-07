@@ -4,7 +4,7 @@ We’ve been fairly cavalier in our use of expressions in Ruby, I don't need to 
 
 This is pretty basic, you will be able to write code with out reading this part but it wouldn’t be as much fun.
 
-As we said before, by default Ruby returns the end statement, not only in methods, anything that can reasonably return a value does. For example: <== is it the "end" statement? I think it isn't but the last line of the body of a function (if it's a function for instance).
+As we said before, by default Ruby returns the end statement, not only in methods, anything that can reasonably return a value does.
 
 `[ 3, 1, 7, 0 ].sort.reverse # => [7, 3, 1, 0]`
 
@@ -88,10 +88,6 @@ end
 The unless statement does support else, but most people seem to agree that it’s clearer to switch to an if statement in those cases.
 
 ### case Expressions
-
-The Ruby case expression is a powerful beast: a multiway if on steroids. And just to make it even more powerful, it comes in two flavors. <== "if on steroids"??
-
-The first form is fairly close to a series of if statements; it lets you list a series of conditions and execute a statement corresponding to the first one that’s true:
 
 ```
 case
